@@ -18,6 +18,13 @@ h2,
 h3 {
   color: #333;
 }
+h2:hover{
+  cursor: pointer;
+  color: #335;
+}
+h2:hover::after {
+  content: " #";
+}
 a {
   color: #c33;
   text-decoration: none;
@@ -30,8 +37,14 @@ ol,
 ul {
   margin-left: 10px;
 }
+pre > code {
+  padding: 10px;
+  background-color: #333;
+  color: #493;
+  margin-left: 20px;
+}
 code {
-  background-color: #f4f4f4;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
   display: inline-block;

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas Sekolah</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Fasilitas Sekolah</h1>
+        <p>Berbagai fasilitas terbaik yang mendukung kegiatan belajar mengajar.</p>
+    </header>
+
+    <section class="grid-container">
+        <div class="facility-card" onclick="openModal('lab')">
+            <img src="img/lab-komputer.webp" alt="Lab Komputer">
+            <h2>Lab Komputer</h2>
+        </div>
+        <div class="facility-card" onclick="openModal('perpustakaan')">
+            <img src="img/perpustakaan.webp" alt="Perpustakaan">
+            <h2>Perpustakaan</h2>
+        </div>
+        <div class="facility-card" onclick="openModal('olahraga')">
+            <img src="img/lapangan.webp" alt="Lapangan Olahraga">
+            <h2>Lapangan Olahraga</h2>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

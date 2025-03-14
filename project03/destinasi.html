@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinasi Wisata</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Destinasi Wisata Kota</h1>
+        <p>Jelajahi berbagai tempat menarik di kota ini.</p>
+    </header>
+
+    <section class="filter-container">
+        <button onclick="filterDestinations('all')">Semua</button>
+        <button onclick="filterDestinations('alam')">Alam</button>
+        <button onclick="filterDestinations('sejarah')">Sejarah</button>
+        <button onclick="filterDestinations('kuliner')">Kuliner</button>
+        <button onclick="filterDestinations('hiburan')">Hiburan</button>
+    </section>
+
+    <section class="destination-container">
+        <div class="destination-card alam" onclick="openModal(0)">
+            <img src="img/gunung.webp" alt="Gunung Indah">
+            <h2>Gunung Indah</h2>
+        </div>
+        <div class="destination-card sejarah" onclick="openModal(1)">
+            <img src="img/museum.webp" alt="Museum Sejarah">
+            <h2>Museum Sejarah</h2>
+        </div>
+        <div class="destination-card kuliner" onclick="openModal(2)">
+            <img src="img/makanan.webp" alt="Wisata Kuliner">
+            <h2>Wisata Kuliner</h2>
+        </div>
+        <div class="destination-card hiburan" onclick="openModal(3)">
+            <img src="img/taman.webp" alt="Taman Bermain">
+            <h2>Taman Bermain</h2>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="Destinasi">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

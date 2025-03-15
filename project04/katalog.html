@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Buku</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Katalog Buku</h1>
+        <p>Temukan buku favorit Anda di sini!</p>
+    </header>
+
+    <section class="filter-container">
+        <input type="text" id="searchBar" placeholder="Cari buku..." onkeyup="searchBook()">
+        <button onclick="filterBooks('all')">Semua</button>
+        <button onclick="filterBooks('fiksi')">Fiksi</button>
+        <button onclick="filterBooks('non-fiksi')">Non-Fiksi</button>
+        <button onclick="filterBooks('komik')">Komik</button>
+        <button onclick="filterBooks('biografi')">Biografi</button>
+    </section>
+
+    <section class="book-container"></section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="Buku">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

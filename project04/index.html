@@ -8,16 +8,81 @@
   <meta name="keywords" content="HTML, CSS, JavaScript, GitHub, GitHub Pages">
   <meta name="author" content="ITB STIKOM Bali">
   <link rel="icon" href="../img/favicon.ico">
-  <title>Website</title>
+  <title>Website Toko Buku Online</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
   <header>
-    <h1>Website</h1>
+    <h1>Website Toko Buku Online</h1>
     <small>[ <a href="../">Kembali</a> ]</small>
   </header>
   <main>
+    <h2>A. Deskripsi</h2>
+    <p>Website ini berfungsi sebagai katalog buku online yang menampilkan berbagai jenis buku beserta deskripsi dan
+      harga. Meskipun tanpa fitur pembelian atau penyimpanan data, website ini tetap memberikan pengalaman interaktif
+      dengan fitur pencarian, filter, dan animasi.</p>
+    <hr />
+    <h2>B. Halaman (Statis)</h2>
+    <ol>
+      <li><strong>Home</strong> – Menampilkan rekomendasi buku terbaru dan terlaris.</li>
+      <li><strong>Kategori Buku</strong> – Daftar buku berdasarkan genre (Fiksi, Non-Fiksi, Komik, dll.).</li>
+      <li><strong>Detail Buku</strong> – Halaman spesifik untuk setiap buku, mencakup deskripsi, harga, dan penulis.
+      </li>
+      <li><strong>Testimoni Pembeli</strong> – Menampilkan ulasan pembaca dengan tampilan slider.</li>
+      <li><strong>Kontak &amp; Pemesanan</strong> – Formulir kontak untuk informasi pemesanan (tanpa backend).</li>
+    </ol>
+    <hr />
+    <h2>C. Fitur (Interaktivitas JavaScript)</h2>
+    <ul>
+      <li>Carousel Buku Terbaru – Slider otomatis/manual di halaman Home untuk menampilkan rekomendasi buku.</li>
+      <li>Hover Animasi pada Katalog Buku – Saat kursor diarahkan ke buku, akan muncul efek highlight dan deskripsi
+        singkat.</li>
+      <li>Filter Buku Berdasarkan Genre – Memungkinkan pengguna memilih kategori buku.</li>
+      <li>Pencarian Buku – Fitur pencarian menggunakan JavaScript untuk menemukan buku berdasarkan judul atau penulis.
+      </li>
+      <li>Testimoni Slider – Slider otomatis untuk menampilkan ulasan pembaca.</li>
+    </ul>
+    <hr />
+    <h2>D. Detail Implementasi</h2>
+    <h3>1. Home</h3>
+    <ul>
+      <li>Header dengan banner promosi buku terbaru.</li>
+      <li>Carousel buku terlaris dan rekomendasi.</li>
+      <li>Bagian &quot;Kenapa Belanja di Sini?&quot; dengan ikon dan deskripsi.</li>
+    </ul>
+    <h3>2. Kategori Buku (<a href="katalog.html" target="_blank" class="contoh" title="dibuka di tab baru">contoh</a>)</h3>
+    <ul>
+      <li>Grid layout untuk daftar buku berdasarkan kategori.</li>
+      <li>Dropdown atau tombol filter kategori.</li>
+      <li>Hover effect untuk memperjelas tampilan buku.</li>
+    </ul>
+    <h3>3. Detail Buku</h3>
+    <ul>
+      <li>Halaman detail dengan informasi lengkap tentang buku.</li>
+      <li>Tombol &quot;Beli Sekarang&quot; (simulasi tanpa backend).</li>
+      <li>Efek transisi untuk pergantian halaman.</li>
+    </ul>
+    <h3>4. Testimoni Pembeli</h3>
+    <ul>
+      <li>Slider otomatis/manual untuk menampilkan ulasan pembeli.</li>
+      <li>Efek transisi pada testimoni yang berganti.</li>
+    </ul>
+    <h3>5. Kontak &amp; Pemesanan</h3>
+    <ul>
+      <li>Form kontak dengan validasi input menggunakan JavaScript.</li>
+      <li>Tombol &quot;Kirim Pesan&quot; yang akan menampilkan alert sukses (tanpa backend).</li>
+    </ul>
+    <hr />
+    <h2>E. Syarat yang Harus Dipenuhi</h2>
+    <ul>
+      <li>Minimal memiliki 5 halaman HTML yang saling terhubung.</li>
+      <li>Menggunakan CSS Grid atau Flexbox untuk tampilan yang rapi dan responsif.</li>
+      <li>Navigasi antar halaman harus jelas dan mudah digunakan.</li>
+      <li>Filter dan pencarian buku harus berfungsi dengan baik menggunakan JavaScript.</li>
+      <li>Minimal ada 3 fitur interaktif yang berjalan dengan baik (carousel, pencarian, filter, slider testimoni,
+        dll.).</li>
+    </ul>
 
   </main>
   <footer>

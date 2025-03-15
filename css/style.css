@@ -37,11 +37,20 @@ ol,
 ul {
   margin-left: 10px;
 }
-pre > code {
+pre {
   padding: 10px;
   background-color: #333;
-  color: #493;
-  margin-left: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 0 20px;
+}
+pre > code {
+  border: none;
+  background-color: inherit;
+  color: #392;
+  display: block;
+  min-width: max-content;
 }
 code {
   background-color: #fff;

@@ -1,0 +1,74 @@
+[
+  {
+      "title": "Pulang",
+      "description": "Novel karya Tere Liye yang mengisahkan petualangan penuh makna.",
+      "img": "buku1.jpg",
+      "category": "fiksi"
+  },
+  {
+      "title": "Filosofi Teras",
+      "description": "Buku tentang filosofi stoikisme dalam kehidupan modern.",
+      "img": "buku2.jpg",
+      "category": "non-fiksi"
+  },
+  {
+      "title": "One Piece",
+      "description": "Komik petualangan bajak laut yang terkenal di seluruh dunia.",
+      "img": "buku3.jpg",
+      "category": "komik"
+  },
+  {
+      "title": "Steve Jobs",
+      "description": "Biografi tentang perjalanan hidup pendiri Apple, Steve Jobs.",
+      "img": "buku4.jpg",
+      "category": "biografi"
+  },
+  {
+      "title": "Laskar Pelangi",
+      "description": "Novel inspiratif tentang perjuangan anak-anak dalam dunia pendidikan.",
+      "img": "buku5.jpg",
+      "category": "fiksi"
+  },
+  {
+      "title": "Bumi",
+      "description": "Novel fantasi karya Tere Liye yang membawa pembaca ke dunia lain.",
+      "img": "buku6.jpg",
+      "category": "fiksi"
+  },
+  {
+      "title": "Sapiens",
+      "description": "Buku yang membahas sejarah umat manusia dari perspektif ilmiah.",
+      "img": "buku7.jpg",
+      "category": "non-fiksi"
+  },
+  {
+      "title": "Rich Dad Poor Dad",
+      "description": "Buku tentang literasi keuangan dan kebebasan finansial.",
+      "img": "buku8.jpg",
+      "category": "non-fiksi"
+  },
+  {
+      "title": "Dragon Ball",
+      "description": "Komik petualangan Son Goku dalam mencari bola naga.",
+      "img": "buku9.jpg",
+      "category": "komik"
+  },
+  {
+      "title": "Naruto",
+      "description": "Komik tentang perjalanan seorang ninja bernama Naruto Uzumaki.",
+      "img": "buku10.jpg",
+      "category": "komik"
+  },
+  {
+      "title": "Atomic Habits",
+      "description": "Buku tentang bagaimana kebiasaan kecil dapat membentuk perubahan besar.",
+      "img": "buku11.jpg",
+      "category": "non-fiksi"
+  },
+  {
+      "title": "Elon Musk",
+      "description": "Biografi tentang perjalanan hidup dan inovasi Elon Musk.",
+      "img": "buku12.jpg",
+      "category": "biografi"
+  }
+]

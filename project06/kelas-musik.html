@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelas Musik</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kelas Musik</h1>
+        <p>Pilih kelas musik favoritmu dan mulai belajar!</p>
+    </header>
+
+    <section class="filter-container">
+        <button onclick="filterClasses('all')">Semua</button>
+        <button onclick="filterClasses('senar')">Senar</button>
+        <button onclick="filterClasses('tiup')">Tiup</button>
+        <button onclick="filterClasses('perkusi')">Perkusi</button>
+        <button onclick="filterClasses('keyboard')">Keyboard</button>
+    </section>
+
+    <section class="class-container">
+        <div class="class-card senar" onclick="openDetails(0)">
+            <img src="img/gitar.webp" alt="Kelas Gitar">
+            <h2>Kelas Gitar</h2>
+            <audio controls>
+                <source src="img/gitar.ogg" type="audio/mpeg">
+                Browser Anda tidak mendukung audio tag.
+            </audio>
+        </div>
+        <div class="class-card tiup" onclick="openDetails(1)">
+            <img src="img/saxophone.webp" alt="Kelas Saxophone">
+            <h2>Kelas Saxophone</h2>
+            <audio controls>
+                <source src="img/saxophone.ogg" type="audio/mpeg">
+                Browser Anda tidak mendukung audio tag.
+            </audio>
+        </div>
+        <div class="class-card perkusi" onclick="openDetails(2)">
+            <img src="img/drum.webp" alt="Kelas Drum">
+            <h2>Kelas Drum</h2>
+            <audio controls>
+                <source src="img/drum.ogg" type="audio/mpeg">
+                Browser Anda tidak mendukung audio tag.
+            </audio>
+        </div>
+        <div class="class-card keyboard" onclick="openDetails(3)">
+            <img src="img/piano.webp" alt="Kelas Piano">
+            <h2>Kelas Piano</h2>
+            <audio controls>
+                <source src="img/piano.ogg" type="audio/mpeg">
+                Browser Anda tidak mendukung audio tag.
+            </audio>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

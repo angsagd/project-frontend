@@ -8,17 +8,74 @@
   <meta name="keywords" content="HTML, CSS, JavaScript, GitHub, GitHub Pages">
   <meta name="author" content="ITB STIKOM Bali">
   <link rel="icon" href="../img/favicon.ico">
-  <title>Website</title>
+  <title>Website Kursus Musik</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
   <header>
-    <h1>Website</h1>
+    <h1>Website Kursus Musik</h1>
     <small>[ <a href="../">Kembali</a> ]</small>
   </header>
   <main>
-
+    <h2>A. Deskripsi</h2>
+    <p>Website ini berisi informasi tentang kursus musik yang ditawarkan, termasuk daftar alat musik yang dapat dipelajari, profil instruktur, jadwal kursus, dan kontak.</p>
+    <hr />
+    <h2>B. Halaman (Statis)</h2>
+    <ol>
+    <li>Home – Pengantar tentang kursus musik dan alat musik yang tersedia.</li>
+    <li>Kelas Musik – Daftar alat musik yang bisa dipelajari (gitar, piano, drum, dll.).</li>
+    <li>Jadwal Kursus – Informasi jadwal kelas yang tersedia.</li>
+    <li>Instruktur – Profil pengajar dengan pengalaman mereka.</li>
+    <li>Pendaftaran – Formulir pendaftaran kursus (tanpa backend).</li>
+    </ol>
+    <hr />
+    <h2>C. Fitur (Interaktivitas JavaScript)</h2>
+    <ul>
+    <li>Audio Player Interaktif – Pengguna bisa mendengar contoh suara alat musik dengan menekan tombol &quot;Dengarkan&quot;.</li>
+    <li>Hover Animasi pada Daftar Kelas – Saat kursor diarahkan ke kelas musik, akan muncul deskripsi singkat.</li>
+    <li>Filter Berdasarkan Jenis Alat Musik – Pengguna dapat menyaring daftar kelas berdasarkan jenis alat musik (senar, tiup, perkusi).</li>
+    <li>Efek Expanding untuk Profil Instruktur – Klik tombol &quot;Lihat Profil&quot; untuk membuka/mengurangi detail instruktur.</li>
+    <li>Form Pendaftaran dengan Validasi – Memastikan pengguna mengisi semua input sebelum mengirimkan formulir.</li>
+    </ul>
+    <hr />
+    <h2>D. Detail Implementasi</h2>
+    <h3>1. Home</h3>
+    <ul>
+    <li>Header dengan banner kursus musik dan tagline inspiratif.</li>
+    <li>Gambar dan deskripsi singkat tentang berbagai alat musik yang tersedia.</li>
+    <li>Tombol &quot;Pelajari Sekarang&quot; yang mengarah ke halaman Kelas Musik.</li>
+    </ul>
+    <h3>2. Kelas Musik (<a href="kelas-musik.html" target="_blank" class="contoh" title="dibuka di tab baru">contoh</a>)</h3>
+    <ul>
+    <li>Grid layout untuk daftar kelas berdasarkan alat musik.</li>
+    <li>Tombol &quot;Dengarkan&quot; yang memainkan suara alat musik menggunakan JavaScript Audio API.</li>
+    <li>Filter alat musik berdasarkan kategori.</li>
+    </ul>
+    <h3>3. Jadwal Kursus</h3>
+    <ul>
+    <li>Tabel berisi jadwal kursus dengan efek hover pada setiap baris.</li>
+    <li>Efek transisi saat memilih jenis kursus.</li>
+    </ul>
+    <h3>4. Instruktur</h3>
+    <ul>
+    <li>Daftar profil pengajar dalam format kartu.</li>
+    <li>Tombol &quot;Lihat Profil&quot; yang memperluas detail instruktur dengan efek animasi.</li>
+    </ul>
+    <h3>5. Pendaftaran</h3>
+    <ul>
+    <li>Form pendaftaran kursus dengan validasi input menggunakan JavaScript.</li>
+    <li>Tombol &quot;Kirim&quot; yang menampilkan notifikasi sukses (tanpa backend).</li>
+    </ul>
+    <hr />
+    <h2>E. Syarat yang Harus Dipenuhi</h2>
+    <ul>
+    <li>Minimal memiliki 5 halaman HTML yang saling terhubung.</li>
+    <li>Menggunakan CSS Grid atau Flexbox untuk tampilan yang rapi dan responsif.</li>
+    <li>Navigasi antar halaman harus jelas dan mudah digunakan.</li>
+    <li>Filter alat musik dan efek expanding profil instruktur harus berfungsi dengan baik.</li>
+    <li>Minimal ada 3 fitur interaktif yang berjalan dengan baik (audio player, filter, efek expanding, dll.).</li>
+    </ul>    
   </main>
   <footer>
     <small>[ <a href="../">Kembali</a> ]</small>

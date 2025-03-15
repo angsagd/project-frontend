@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Cafe</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Menu Cafe</h1>
+        <p>Temukan makanan dan minuman favoritmu!</p>
+    </header>
+
+    <section class="filter-container">
+        <button onclick="filterMenu('all')">Semua</button>
+        <button onclick="filterMenu('makanan')">Makanan</button>
+        <button onclick="filterMenu('minuman')">Minuman</button>
+        <button onclick="filterMenu('dessert')">Dessert</button>
+    </section>
+
+    <section class="menu-container">
+        <div class="menu-card makanan" onclick="openModal(0)">
+            <img src="img/nasigoreng.webp" alt="Nasi Goreng">
+            <h2>Nasi Goreng</h2>
+            <p>Rp 25.000</p>
+        </div>
+        <div class="menu-card minuman" onclick="openModal(1)">
+            <img src="img/kopi.webp" alt="Kopi Latte">
+            <h2>Kopi Latte</h2>
+            <p>Rp 20.000</p>
+        </div>
+        <div class="menu-card dessert" onclick="openModal(2)">
+            <img src="img/brownies.webp" alt="Brownies Coklat">
+            <h2>Brownies Coklat</h2>
+            <p>Rp 18.000</p>
+        </div>
+        <div class="menu-card minuman" onclick="openModal(3)">
+            <img src="img/teh.webp" alt="Teh Manis">
+            <h2>Teh Manis</h2>
+            <p>Rp 10.000</p>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="Menu">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <p id="modal-price"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

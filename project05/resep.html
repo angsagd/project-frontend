@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Nasi Goreng</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Resep Nasi Goreng</h1>
+        <p>Mudah, cepat, dan lezat!</p>
+    </header>
+
+    <section class="recipe-container">
+        <div class="recipe-image">
+            <img src="img/nasigoreng.webp" alt="Nasi Goreng">
+        </div>
+
+        <div class="recipe-details">
+            <h2>Bahan-bahan</h2>
+            <ul>
+                <li onmouseover="highlight(this)" onmouseout="unhighlight(this)">2 piring nasi putih</li>
+                <li onmouseover="highlight(this)" onmouseout="unhighlight(this)">2 butir telur</li>
+                <li onmouseover="highlight(this)" onmouseout="unhighlight(this)">2 siung bawang putih</li>
+                <li onmouseover="highlight(this)" onmouseout="unhighlight(this)">2 sdm kecap manis</li>
+                <li onmouseover="highlight(this)" onmouseout="unhighlight(this)">Garam dan lada secukupnya</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="steps">
+        <h2>Langkah-langkah</h2>
+        <div class="step" onclick="toggleStep(this)">
+            <h3>1. Panaskan Minyak</h3>
+            <p>Panaskan minyak dalam wajan, lalu tumis bawang putih hingga harum.</p>
+        </div>
+        <div class="step" onclick="toggleStep(this)">
+            <h3>2. Masukkan Telur</h3>
+            <p>Masukkan telur, aduk hingga matang dan berbentuk orak-arik.</p>
+        </div>
+        <div class="step" onclick="toggleStep(this)">
+            <h3>3. Tambahkan Nasi</h3>
+            <p>Masukkan nasi dan aduk hingga merata dengan bumbu.</p>
+        </div>
+        <div class="step" onclick="toggleStep(this)">
+            <h3>4. Beri Kecap dan Bumbu</h3>
+            <p>Tambahkan kecap manis, garam, dan lada secukupnya, lalu aduk rata.</p>
+        </div>
+        <div class="step" onclick="toggleStep(this)">
+            <h3>5. Sajikan</h3>
+            <p>Angkat dan sajikan nasi goreng hangat dengan pelengkap favoritmu.</p>
+        </div>
+    </section>
+
+    <section class="audio-timer">
+        <h2>Putar Narasi Resep</h2>
+        <audio controls>
+            <source src="img/nasigoreng.ogg" type="audio/mpeg">
+            Browser Anda tidak mendukung audio tag.
+        </audio>
+
+        <h2>Atur Timer Memasak</h2>
+        <input type="number" id="timerInput" placeholder="Masukkan waktu (detik)">
+        <button onclick="startTimer()">Mulai Timer</button>
+        <p id="timerDisplay"></p>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

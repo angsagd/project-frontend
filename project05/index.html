@@ -8,16 +8,82 @@
   <meta name="keywords" content="HTML, CSS, JavaScript, GitHub, GitHub Pages">
   <meta name="author" content="ITB STIKOM Bali">
   <link rel="icon" href="../img/favicon.ico">
-  <title>Website</title>
+  <title>Website Panduan Memasak</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
   <header>
-    <h1>Website</h1>
+    <h1>Website Panduan Memasak</h1>
     <small>[ <a href="../">Kembali</a> ]</small>
   </header>
   <main>
+    <h2>A. Deskripsi</h2>
+    <p>Website ini berisi resep dan panduan memasak berbagai hidangan, mencakup makanan utama,
+        makanan ringan, dan minuman. Pengguna dapat melihat langkah-langkah memasak dalam format teks maupun
+      video (statis).</p>
+    <hr />
+    <h2>B. Halaman (Statis)</h2>
+    <ol>
+      <li><strong>Home</strong> – Rekomendasi resep terbaru dan terpopuler.</li>
+      <li><strong>Makanan Berat</strong> – Daftar resep makanan utama seperti nasi goreng, rendang, dll.</li>
+      <li><strong>Makanan Ringan</strong> – Resep camilan seperti kue dan gorengan.</li>
+      <li><strong>Minuman</strong> – Resep minuman dingin dan hangat.</li>
+      <li><strong>Tips Memasak</strong> – Panduan dasar memasak untuk pemula.</li>
+    </ol>
+    <hr />
+    <h2>C. Fitur (Interaktivitas JavaScript)</h2>
+    <ul>
+      <li>Slideshow Resep Populer – Gambar-gambar resep terbaik berganti secara otomatis/manual di halaman Home.</li>
+      <li>Hover Animasi pada Resep – Saat kursor diarahkan ke resep, akan muncul highlight dan deskripsi singkat.</li>
+      <li>Filter Resep Berdasarkan Kategori – Memungkinkan pengguna memilih resep berdasarkan kategori (misal: makanan
+        vegetarian, pedas, manis).</li>
+      <li>Efek Expanding untuk Langkah-Langkah Memasak – Pengguna bisa mengklik langkah-langkah resep untuk melihat
+        detailnya.</li>
+      <li>Audio Player untuk Narasi Resep (Opsional) – Memainkan rekaman suara penjelasan resep saat tombol play
+        ditekan.</li>
+    </ul>
+    <hr />
+    <h2>D. Detail Implementasi</h2>
+    <h3>1. Home</h3>
+    <ul>
+      <li>Header dengan banner rekomendasi resep hari ini.</li>
+      <li>Slideshow makanan terbaik di minggu ini.</li>
+      <li>Tombol &quot;Jelajahi Resep&quot; yang mengarah ke halaman kategori makanan.</li>
+    </ul>
+    <h3>2. Makanan</h3>
+    <ul>
+      <li>Daftar makanan utama dalam grid layout dengan gambar dan nama resep.</li>
+      <li>Filter berdasarkan bahan utama atau tingkat kesulitan memasak.</li>
+      <li>Hover effect untuk menampilkan preview bahan makanan.</li>
+    </ul>
+    <h3>3. Minuman</h3>
+    <ul>
+      <li>Resep minuman dengan tampilan kartu interaktif.</li>
+      <li>Efek transisi antar kategori (minuman panas/dingin).</li>
+    </ul>
+    <h3>4. Resep Memasak / Membuat (<a href="resep.html" target="_blank" class="contoh" title="dibuka di tab baru">contoh</a>)</h3>
+    <ul>
+      <li>Foto masakan serta daftar bahan-bahan dengan efek highlight saat mouse hover.</li>
+      <li>Langkah-langkah dengan efek accordion untuk melihat detail langkah.</li>
+      <li>Audio narasi memasak.</li>
+    </ul>
+    <h3>5. Tips Memasak</h3>
+    <ul>
+      <li>Daftar teknik memasak dalam format accordion/dropdown.</li>
+      <li>Simulasi &quot;timer memasak&quot; sederhana dengan JavaScript.</li>
+    </ul>
+    <hr />
+    <h2>E. Syarat yang Harus Dipenuhi</h2>
+    <ul>
+      <li>Minimal memiliki 5 halaman HTML yang saling terhubung.</li>
+      <li>Menggunakan CSS Grid atau Flexbox untuk tampilan yang rapi dan responsif.</li>
+      <li>Navigasi antar halaman harus jelas dan mudah digunakan.</li>
+      <li>Filter dan efek expanding pada langkah-langkah memasak harus berfungsi dengan baik menggunakan JavaScript.
+      </li>
+      <li>Minimal ada 3 fitur interaktif yang berjalan dengan baik (slideshow, filter resep, efek expanding langkah
+        memasak, dll.).</li>
+    </ul>
 
   </main>
   <footer>

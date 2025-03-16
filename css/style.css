@@ -65,6 +65,10 @@ code {
 .contoh {
   font-weight: normal;
 }
+.table-responsive {
+  width: 100%;
+  overflow-x: auto; /* Tambahkan scroll horizontal jika diperlukan */
+}
 table {
   border-collapse: collapse;
   width: 100%;

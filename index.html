@@ -254,93 +254,97 @@
     <h3>Rubrik Penilaian Kelompok</h3>
     <p>Penilaian ini diberikan kepada tim secara keseluruhan berdasarkan kualitas dan kesesuaian project yang
       dikerjakan.</p>
-    <table>
-      <thead>
-        <tr>
-          <th>No</th>
-          <th>Kriteria Penilaian</th>
-          <th>Skor 0-3</th>
-          <th>Skor 4-6</th>
-          <th>Skor 7-9</th>
-          <th>Skor 10-12</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td><strong>Kesesuaian dengan ketentuan pengerjaan</strong></td>
-          <td>Tidak sesuai dengan ketentuan, banyak fitur tidak diterapkan.</td>
-          <td>Beberapa ketentuan dipenuhi, namun masih ada banyak kekurangan.</td>
-          <td>Hampir semua ketentuan terpenuhi dengan baik.</td>
-          <td>Seluruh ketentuan telah dipenuhi dengan sangat baik.</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td><strong>Kualitas kode HTML, CSS, dan JavaScript</strong></td>
-          <td>Kode berantakan, banyak error, dan tidak terstruktur.</td>
-          <td>Kode cukup rapi tetapi masih banyak kesalahan dalam penulisan.</td>
-          <td>Kode cukup baik, terstruktur, dan hanya ada sedikit kesalahan.</td>
-          <td>Kode sangat rapi, bersih, dan mengikuti praktik terbaik.</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td><strong>Responsif untuk desktop dan mobile</strong></td>
-          <td>Tidak responsif, hanya bisa digunakan di satu jenis perangkat.</td>
-          <td>Beberapa elemen responsif, namun masih kurang optimal.</td>
-          <td>Hampir seluruh elemen responsif, tetapi masih ada yang perlu diperbaiki.</td>
-          <td>Website sepenuhnya responsif dan nyaman digunakan di berbagai perangkat.</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td><strong>Manajemen kode menggunakan GitHub</strong></td>
-          <td>Tidak menggunakan GitHub atau hanya satu orang yang berkontribusi.</td>
-          <td>Menggunakan GitHub, tetapi hanya beberapa anggota yang berkontribusi.</td>
-          <td>Semua anggota tim berkontribusi dengan commit yang cukup baik.</td>
-          <td>Manajemen GitHub sangat baik, commit terorganisir, dan kolaborasi jelas.</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td><strong>Kualitas dokumentasi proyek (<code>README.md</code>)</strong></td>
-          <td>Tidak ada dokumentasi atau sangat minim.</td>
-          <td>Dokumentasi ada tetapi kurang jelas atau tidak sesuai format.</td>
-          <td>Dokumentasi cukup baik dan mencakup poin-poin penting.</td>
-          <td>Dokumentasi lengkap, terstruktur dengan baik, dan mudah dipahami.</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Kriteria Penilaian</th>
+            <th>Skor 0-3</th>
+            <th>Skor 4-6</th>
+            <th>Skor 7-9</th>
+            <th>Skor 10-12</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><strong>Kesesuaian dengan ketentuan pengerjaan</strong></td>
+            <td>Tidak sesuai dengan ketentuan, banyak fitur tidak diterapkan.</td>
+            <td>Beberapa ketentuan dipenuhi, namun masih ada banyak kekurangan.</td>
+            <td>Hampir semua ketentuan terpenuhi dengan baik.</td>
+            <td>Seluruh ketentuan telah dipenuhi dengan sangat baik.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><strong>Kualitas kode HTML, CSS, dan JavaScript</strong></td>
+            <td>Kode berantakan, banyak error, dan tidak terstruktur.</td>
+            <td>Kode cukup rapi tetapi masih banyak kesalahan dalam penulisan.</td>
+            <td>Kode cukup baik, terstruktur, dan hanya ada sedikit kesalahan.</td>
+            <td>Kode sangat rapi, bersih, dan mengikuti praktik terbaik.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><strong>Responsif untuk desktop dan mobile</strong></td>
+            <td>Tidak responsif, hanya bisa digunakan di satu jenis perangkat.</td>
+            <td>Beberapa elemen responsif, namun masih kurang optimal.</td>
+            <td>Hampir seluruh elemen responsif, tetapi masih ada yang perlu diperbaiki.</td>
+            <td>Website sepenuhnya responsif dan nyaman digunakan di berbagai perangkat.</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><strong>Manajemen kode menggunakan GitHub</strong></td>
+            <td>Tidak menggunakan GitHub atau hanya satu orang yang berkontribusi.</td>
+            <td>Menggunakan GitHub, tetapi hanya beberapa anggota yang berkontribusi.</td>
+            <td>Semua anggota tim berkontribusi dengan commit yang cukup baik.</td>
+            <td>Manajemen GitHub sangat baik, commit terorganisir, dan kolaborasi jelas.</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><strong>Kualitas dokumentasi proyek (<code>README.md</code>)</strong></td>
+            <td>Tidak ada dokumentasi atau sangat minim.</td>
+            <td>Dokumentasi ada tetapi kurang jelas atau tidak sesuai format.</td>
+            <td>Dokumentasi cukup baik dan mencakup poin-poin penting.</td>
+            <td>Dokumentasi lengkap, terstruktur dengan baik, dan mudah dipahami.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <p><strong>Range Skor Kelompok: 0-60</strong></p>
     <h3>Rubrik Penilaian Personal</h3>
     <p>Penilaian ini diberikan kepada individu berdasarkan kontribusi dan pemahaman terhadap project.</p>
-    <table>
-      <thead>
-        <tr>
-          <th>No</th>
-          <th>Kriteria Penilaian</th>
-          <th>Skor 0-5</th>
-          <th>Skor 6-10</th>
-          <th>Skor 11-15</th>
-          <th>Skor 16-20</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td><strong>Keaktifan partisipasi pada GitHub (commit kode dan dokumentasi)</strong></td>
-          <td>Tidak berkontribusi atau hanya sekali melakukan commit.</td>
-          <td>Kontribusi sedikit dan tidak mencerminkan peran yang jelas.</td>
-          <td>Kontribusi cukup banyak dan terlihat aktif dalam pengembangan.</td>
-          <td>Sangat aktif dalam menulis kode dan dokumentasi, memiliki commit yang signifikan.</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td><strong>Nilai tanya jawab lisan saat presentasi</strong></td>
-          <td>Tidak bisa menjawab pertanyaan dengan baik atau tidak memahami proyek.</td>
-          <td>Menjawab beberapa pertanyaan tetapi masih banyak yang kurang tepat.</td>
-          <td>Bisa menjawab sebagian besar pertanyaan dengan cukup baik.</td>
-          <td>Menjawab pertanyaan dengan sangat baik dan menunjukkan pemahaman mendalam.</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Kriteria Penilaian</th>
+            <th>Skor 0-5</th>
+            <th>Skor 6-10</th>
+            <th>Skor 11-15</th>
+            <th>Skor 16-20</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><strong>Keaktifan partisipasi pada GitHub (commit kode dan dokumentasi)</strong></td>
+            <td>Tidak berkontribusi atau hanya sekali melakukan commit.</td>
+            <td>Kontribusi sedikit dan tidak mencerminkan peran yang jelas.</td>
+            <td>Kontribusi cukup banyak dan terlihat aktif dalam pengembangan.</td>
+            <td>Sangat aktif dalam menulis kode dan dokumentasi, memiliki commit yang signifikan.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><strong>Nilai tanya jawab lisan saat presentasi</strong></td>
+            <td>Tidak bisa menjawab pertanyaan dengan baik atau tidak memahami proyek.</td>
+            <td>Menjawab beberapa pertanyaan tetapi masih banyak yang kurang tepat.</td>
+            <td>Bisa menjawab sebagian besar pertanyaan dengan cukup baik.</td>
+            <td>Menjawab pertanyaan dengan sangat baik dan menunjukkan pemahaman mendalam.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <p><strong>Range Skor Personal: 0-40</strong></p>
     <hr>
     <h2>G. Referensi</h2>

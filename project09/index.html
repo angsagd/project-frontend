@@ -8,17 +8,78 @@
   <meta name="keywords" content="HTML, CSS, JavaScript, GitHub, GitHub Pages">
   <meta name="author" content="ITB STIKOM Bali">
   <link rel="icon" href="../img/favicon.ico">
-  <title>Website</title>
+  <title>Website Informasi Game</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
   <header>
-    <h1>Website</h1>
+    <h1>Website Informasi Game</h1>
     <small>[ <a href="../">Kembali</a> ]</small>
   </header>
   <main>
-
+    <h2>A. Deskripsi</h2>
+    <p>Website ini berfungsi sebagai pusat informasi untuk satu game tertentu. Situs ini mencakup berita terbaru, daftar
+      karakter/unit, panduan bermain, turnamen, dan komunitas.</p>
+    <hr />
+    <h2>B. Halaman (Statis)</h2>
+    <ol>
+      <li><strong>Home</strong> – Ringkasan game, berita terbaru, dan update patch.</li>
+      <li><strong>Karakter/Unit</strong> – Daftar karakter/unit dalam game beserta peran dan statistiknya.</li>
+      <li><strong>Panduan &amp; Build</strong> – Tips strategi bermain, build item, dan kombinasi skill terbaik.</li>
+      <li><strong>Turnamen &amp; Event</strong> – Informasi turnamen, jadwal kompetisi, dan hadiah.</li>
+      <li><strong>Komunitas</strong> – Forum diskusi, daftar guild/clan, dan tim eSports.</li>
+    </ol>
+    <hr />
+    <h2>C. Fitur (Interaktivitas JavaScript)</h2>
+    <ul>
+      <li>Slideshow Berita Game di Halaman Home – Gambar dan judul berita akan berganti otomatis/manual.</li>
+      <li>Hover Animasi pada Daftar Karakter/Unit – Saat kursor diarahkan ke karakter/unit, akan muncul efek highlight
+        dan deskripsi singkat.</li>
+      <li>Filter Karakter Berdasarkan Role – Pengguna dapat menyaring daftar karakter (Tank, DPS, Support).</li>
+      <li>Accordion/Dropdown untuk Panduan &amp; Build – Panduan strategi bisa dibuka dan ditutup sesuai kategori.</li>
+      <li>Countdown Timer ke Turnamen Berikutnya – Menampilkan hitung mundur hingga turnamen dimulai.</li>
+    </ul>
+    <hr />
+    <h2>D. Detail Implementasi</h2>
+    <h3>1. Home</h3>
+    <ul>
+      <li>Header dengan gambar banner game dan update terbaru.</li>
+      <li>Slideshow berita dan patch terbaru.</li>
+      <li>Tombol &quot;Mulai Bermain&quot; atau &quot;Pelajari Game&quot; untuk mengarahkan ke halaman Panduan &amp;
+        Build.</li>
+    </ul>
+    <h3>2. Karakter/Unit (<a href="karakter.html" target="_blank" class="contoh" title="dibuka di tab baru">contoh</a>)</h3>
+    <ul>
+      <li>Grid layout untuk daftar karakter/unit berdasarkan role.</li>
+      <li>Filter karakter berdasarkan kategori (Tank, DPS, Support).</li>
+      <li>Hover effect untuk menampilkan informasi singkat karakter.</li>
+    </ul>
+    <h3>3. Panduan &amp; Build</h3>
+    <ul>
+      <li>Accordion atau dropdown untuk menampilkan strategi berdasarkan peran atau mode permainan.</li>
+      <li>Tombol &quot;Copy Build&quot; untuk menyalin build item terbaik ke clipboard.</li>
+    </ul>
+    <h3>4. Turnamen &amp; Event</h3>
+    <ul>
+      <li>Tabel interaktif berisi informasi tanggal, lokasi, dan hadiah turnamen.</li>
+      <li>Countdown timer yang menunjukkan sisa waktu sebelum turnamen dimulai.</li>
+    </ul>
+    <h3>5. Komunitas</h3>
+    <ul>
+      <li>Daftar forum diskusi dan guild dalam format grid.</li>
+      <li>Tooltip interaktif saat mengarahkan kursor ke nama tim/guild.</li>
+    </ul>
+    <hr />
+    <h2>E. Syarat yang Harus Dipenuhi</h2>
+    <ul>
+      <li>Minimal memiliki 5 halaman HTML yang saling terhubung.</li>
+      <li>Menggunakan CSS Grid atau Flexbox untuk tampilan yang rapi dan responsif.</li>
+      <li>Navigasi antar halaman harus jelas dan mudah digunakan.</li>
+      <li>Filter karakter dan efek expanding panduan harus berfungsi dengan baik.</li>
+      <li>Minimal ada 3 fitur interaktif yang berjalan dengan baik (slideshow berita, filter karakter, countdown
+        turnamen, dll.).</li>
+    </ul>
   </main>
   <footer>
     <small>[ <a href="../">Kembali</a> ]</small>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Karakter</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Daftar Karakter</h1>
+        <p>Pilih karakter favoritmu dan lihat detail kemampuannya!</p>
+    </header>
+
+    <section class="filter-container">
+        <button onclick="filterCharacters('all')">Semua</button>
+        <button onclick="filterCharacters('tank')">Tank</button>
+        <button onclick="filterCharacters('marksman')">Marksman</button>
+        <button onclick="filterCharacters('support')">Support</button>
+        <button onclick="filterCharacters('assassin')">Assassin</button>
+        <button onclick="filterCharacters('mage')">Mage</button>
+    </section>
+
+    <section class="character-container">
+        <div class="character-card tank" onclick="openModal(0)">
+            <img src="img/tank.webp" alt="Tank">
+            <h2>Iron Guardian</h2>
+            <p>Role: Tank</p>
+        </div>
+        <div class="character-card marksman" onclick="openModal(1)">
+            <img src="img/marksman.webp" alt="Marksman">
+            <h2>Shadow Archer</h2>
+            <p>Role: Marksman</p>
+        </div>
+        <div class="character-card support" onclick="openModal(2)">
+            <img src="img/support.webp" alt="Support">
+            <h2>Light Healer</h2>
+            <p>Role: Support</p>
+        </div>
+        <div class="character-card assassin" onclick="openModal(3)">
+          <img src="img/assassin.webp" alt="Assassin">
+          <h2>Night Stalker</h2>
+          <p>Role: Assassin</p>
+        </div>
+        <div class="character-card fighter" onclick="openModal(4)">
+            <img src="img/fighter.webp" alt="Fighter">
+            <h2>Red Paladin</h2>
+            <p>Role: Fighter</p>
+        </div>
+        <div class="character-card mage" onclick="openModal(5)">
+          <img src="img/mage.webp" alt="Fighter">
+          <h2>Frost Flame</h2>
+          <p>Role: Mage</p>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="Karakter">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

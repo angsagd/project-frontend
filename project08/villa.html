@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Villa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Daftar Villa</h1>
+        <p>Pilih villa impianmu untuk liburan yang tak terlupakan!</p>
+    </header>
+
+    <section class="filter-container">
+        <button onclick="filterVillas('all')">Semua</button>
+        <button onclick="filterVillas('kolam')">Kolam Renang</button>
+        <button onclick="filterVillas('pemandangan')">Pemandangan Laut</button>
+        <button onclick="filterVillas('kapasitas')">Kapasitas 6+ Orang</button>
+    </section>
+
+    <section class="villa-container">
+        <div class="villa-card kolam" onclick="openModal(0)">
+            <img src="img/villa1.webp" alt="Villa Kolam Renang">
+            <h2>Villa Kolam Renang</h2>
+            <p>Rp 2.000.000/malam</p>
+        </div>
+        <div class="villa-card pemandangan" onclick="openModal(1)">
+            <img src="img/villa2.webp" alt="Villa Pemandangan Laut">
+            <h2>Villa Pemandangan Laut</h2>
+            <p>Rp 3.500.000/malam</p>
+        </div>
+        <div class="villa-card kapasitas" onclick="openModal(2)">
+            <img src="img/villa3.webp" alt="Villa Kapasitas Besar">
+            <h2>Villa Kapasitas Besar</h2>
+            <p>Rp 4.500.000/malam</p>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="Villa">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <p id="modal-price"></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
